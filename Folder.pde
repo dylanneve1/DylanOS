@@ -25,7 +25,7 @@ class Folder {
       if (mouseButton == LEFT) {
         pressedOnFolder = true;
       }
-    } else {
+    } else if(mousePressed == false) {
       pressedOnFolder = false;
     }
   }

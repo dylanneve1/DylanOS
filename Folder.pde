@@ -22,7 +22,9 @@ class Folder {
 
   void pressed() {
     if (mousePressed && mouseX >= x-25 && mouseX <= x+25 && mouseY <= y+25 && mouseY >= y-25) {
-      pressedOnFolder = true;
+      if (mouseButton == LEFT) {
+        pressedOnFolder = true;
+      }
     } else {
       pressedOnFolder = false;
     }

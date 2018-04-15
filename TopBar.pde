@@ -8,6 +8,7 @@ class TopBar {
   }
 
   void show() {
+    rectMode(CENTER);
     noStroke();
     fill(50);
     rect(250, 0, 500, 50);

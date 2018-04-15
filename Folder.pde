@@ -36,8 +36,4 @@ class Folder {
       y = mouseY;
     }
   }
-
-  void mouseReleased() {
-    pressedOnFolder = false;
-  }
 }

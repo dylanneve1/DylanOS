@@ -6,6 +6,9 @@ class Mouse {
   float rmenux;
   float rmenuy;
   
+  float rmenulength = 100;
+  float rmenuheight = -150;
+  
   void call() {
     show();
     rclick();
@@ -38,9 +41,10 @@ class Mouse {
         rmenuy = mouseY;
         rclicked = false;
       }
-      fill(255);
+      fill(200);
       rectMode(CORNER);
-      rect(rmenux, rmenuy, 100, -200);
+      rect(rmenux, rmenuy, rmenulength, rmenuheight);
+      
     }
   }
 }

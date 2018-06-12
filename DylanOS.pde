@@ -1,6 +1,7 @@
 PImage background;
 PImage folder;
 
+Finder finder;
 Folder f;
 TopBar tb;
 Mouse m;
@@ -10,6 +11,7 @@ void setup() {
   // Load assets
   folder = loadImage("folder.png");
   background = loadImage("background.jpg");
+  finder = new Finder();
   m = new Mouse();
   tb = new TopBar();
   f = new Folder();
@@ -29,4 +31,12 @@ void draw() {
   
   //mouse
   m.caller();
+}
+
+void keyPressed()
+{
+  if(key == 'f')
+  {
+    finder.callFinder = true;
+  }
 }

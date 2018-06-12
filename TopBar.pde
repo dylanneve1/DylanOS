@@ -11,10 +11,11 @@ class TopBar {
     rectMode(CENTER);
     noStroke();
     fill(50);
-    rect(250, 0, 500, 50);
+    rect(displayWidth/2, 0, displayWidth, 50);
   }
   
   void menus() {
+    textSize(12);
     fill(255);
     textAlign(CENTER);
     text("Start", 25, 15);

@@ -20,5 +20,6 @@ class TopBar {
     textAlign(CENTER);
     text("Start", 25, 15);
     text("File", 70, 15);
+    text("User : dylanneve1", 1850, 15);
   }
 }

@@ -1,20 +1,24 @@
 PImage background;
+PImage folder;
 
 Folder f;
 TopBar tb;
 Mouse m;
+Desktop d;
 
 void setup() {
+  folder = loadImage("folder.png");
   background = loadImage("background.jpg");
   m = new Mouse();
   tb = new TopBar();
   f = new Folder();
+  d = new Desktop();
   fullScreen();
 }
 
 void draw() {
-  noCursor();
-  image(background, 0, 0, displayWidth, displayHeight);
+  // Desktop init
+  d.caller();
 
   //taskbar
   tb.call();
@@ -24,8 +28,4 @@ void draw() {
   
   //mouse
   m.call();
-  
-  fill(255);
-  textSize(30);
-  text("Welcome to DylanOS!", displayWidth/2, displayHeight/2);
 }

@@ -13,8 +13,8 @@ class Folder {
 
   void show() {
     fill(255);
-    rectMode(CENTER);
-    rect(x, y, 50, 50);
+    imageMode(CENTER);
+    image(folder, x, y, 50, 50);
     textAlign(CENTER);
     fill(255);
     text("Folder", x, y + 50 );

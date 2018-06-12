@@ -2,7 +2,7 @@ class TopBar {
 
   String main = "Main";
   
-  void call() {
+  void caller() {
     show();
     menus();
   }

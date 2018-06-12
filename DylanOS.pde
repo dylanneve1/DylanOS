@@ -7,13 +7,14 @@ Mouse m;
 Desktop d;
 
 void setup() {
+  // Load assets
   folder = loadImage("folder.png");
   background = loadImage("background.jpg");
   m = new Mouse();
   tb = new TopBar();
   f = new Folder();
   d = new Desktop();
-  fullScreen();
+  fullScreen(P2D);
 }
 
 void draw() {
@@ -21,11 +22,11 @@ void draw() {
   d.caller();
 
   //taskbar
-  tb.call();
+  tb.caller();
 
   //folder
-  f.call();
+  f.caller();
   
   //mouse
-  m.call();
+  m.caller();
 }

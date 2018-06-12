@@ -5,7 +5,7 @@ class Folder {
 
   boolean pressedOnFolder = false;
 
-  void call() {
+  void caller() {
     show();
     pressed();
     move();

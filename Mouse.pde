@@ -9,7 +9,7 @@ class Mouse {
   float rmenulength = 100;
   float rmenuheight = -150;
   
-  void call() {
+  void caller() {
     show();
     rclick();
     rclickmenu();
